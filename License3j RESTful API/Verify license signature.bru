@@ -1,0 +1,15 @@
+meta {
+  name: Verify license signature
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{base-url}}/api/license/verify
+  body: none
+  auth: none
+}
+
+docs {
+  Checks the validity of the license signature using the key-pair loaded in memory.
+}

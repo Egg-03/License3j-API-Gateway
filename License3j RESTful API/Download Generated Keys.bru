@@ -1,0 +1,25 @@
+meta {
+  name: Download Generated Keys
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base-url}}/api/key/downloadkeys?privateKeyName=egg.private&publicKeyName=egg.public&format=BINARY
+  body: none
+  auth: none
+}
+
+params:query {
+  privateKeyName: egg.private
+  publicKeyName: egg.public
+  format: BINARY
+}
+
+headers {
+  Content-Type: application/zip
+}
+
+docs {
+  This will allow you to download both the keys while simultaneously keeping them in memory.
+}

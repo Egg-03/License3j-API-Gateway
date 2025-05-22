@@ -1,0 +1,15 @@
+meta {
+  name: Show the license available in memory
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base-url}}/api/license/show
+  body: none
+  auth: none
+}
+
+docs {
+  Shows the features of the license currently in memory.
+}

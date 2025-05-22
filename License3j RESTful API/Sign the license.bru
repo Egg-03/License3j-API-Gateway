@@ -1,0 +1,15 @@
+meta {
+  name: Sign the license
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{base-url}}/api/license/sign
+  body: none
+  auth: none
+}
+
+docs {
+  Signs the license with the key-pair generated or loaded into the memory. Any feature added to the license requires it to be re-signed before it can be saved again.
+}

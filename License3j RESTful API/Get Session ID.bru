@@ -1,0 +1,15 @@
+meta {
+  name: Get Session ID
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{base-url}}/api/sessionid
+  body: none
+  auth: none
+}
+
+docs {
+  Provides the session ID of the current user. All sessions expire after 30 minutes.
+}

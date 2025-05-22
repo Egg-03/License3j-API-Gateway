@@ -1,0 +1,20 @@
+meta {
+  name: Upload a license file to memory
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base-url}}/api/license/upload
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  license: @file(postman-cloud:///1f02e1fc-e5be-4c40-8ce1-7272ca8a0912)
+  format: BINARY
+}
+
+docs {
+  Loads a license in memory from a file.
+}

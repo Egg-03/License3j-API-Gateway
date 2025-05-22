@@ -1,0 +1,17 @@
+meta {
+  name: Create a fresh license in memory
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base-url}}/api/license/new
+  body: none
+  auth: none
+}
+
+docs {
+  Creates a fresh license in memory. This license is devoid of any features and is unsigned. The next workflow after this typically includes adding features to the license, then signing it with a pre-loaded or a newly generated key-pair and then saving it.
+  
+  _NOTE:_ If there is a license already loaded in memory, it will be replaced by a new blank license upon this request. However, replacement will occur only when the previous license in memory has been saved at least once.
+}

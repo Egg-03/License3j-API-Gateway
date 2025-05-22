@@ -1,0 +1,20 @@
+meta {
+  name: Upload a private key to memory
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{base-url}}/api/key/uploadprivatekey
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: application/octet-stream
+}
+
+body:multipart-form {
+  privateKeyFile: @file(postman-cloud:///1f02e7ee-9979-4db0-b959-c2691e8e92bc)
+  format: BINARY
+}

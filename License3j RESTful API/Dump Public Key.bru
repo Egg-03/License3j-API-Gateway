@@ -1,0 +1,15 @@
+meta {
+  name: Dump Public Key
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{base-url}}/api/key/dumppublickey
+  body: none
+  auth: none
+}
+
+docs {
+  Dumps the public key on screen in the form of Java readable code so that you can embed the key in your application.
+}

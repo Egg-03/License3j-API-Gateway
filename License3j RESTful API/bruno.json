@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "License3j RESTful API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

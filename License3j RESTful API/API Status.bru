@@ -1,0 +1,15 @@
+meta {
+  name: API Status
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{base-url}}/api/healthcheck
+  body: none
+  auth: none
+}
+
+docs {
+  Checks if the API endpoint can be reached or not.
+}

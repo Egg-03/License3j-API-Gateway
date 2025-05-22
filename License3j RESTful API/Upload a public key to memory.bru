@@ -1,0 +1,24 @@
+meta {
+  name: Upload a public key to memory
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{base-url}}/api/key/uploadpublickey
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  ~: 
+}
+
+headers {
+  Content-Type: application/octet-stream
+}
+
+body:multipart-form {
+  publicKeyFile: @file(postman-cloud:///1f02e7fb-9ec2-42b0-aa5e-233ca76a33b8)
+  format: BINARY
+}

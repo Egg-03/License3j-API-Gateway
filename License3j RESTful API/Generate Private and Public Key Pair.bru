@@ -1,0 +1,20 @@
+meta {
+  name: Generate Private and Public Key Pair
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base-url}}/api/key/generatekeys?cipher=RSA/ECB/PKCS1Padding&size=3072
+  body: none
+  auth: none
+}
+
+params:query {
+  cipher: RSA/ECB/PKCS1Padding
+  size: 3072
+}
+
+docs {
+  This will generate the private and public keys you will need to sign and verify your license. The generated keys will be stored in memory. If you upload a private or a public key from a file, the keys in memory will be overriden by the keys loaded from the files.
+}
