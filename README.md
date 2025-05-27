@@ -1,2 +1,2 @@
-# License3j-API-Collection
-Collections for the License3j API
+# License3j-API-Gateway
+Gateway for the License3j API instance hosted on Render
